@@ -1,0 +1,26 @@
+body {
+	font-family: Bebas, sans-serif;
+	color: #5E6A76;
+}
+.container {
+	margin: auto;
+	max-width: 768px;
+}
+.container > div{
+	float: left;
+	width: 25%;
+}
+strong {
+	color:#CC6600;
+}
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+h1 {
+	color: #33CCFF;
+}
+h3 {
+	color: #CC6600;
+}

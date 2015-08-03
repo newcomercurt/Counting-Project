@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curt Newcomer</title>
+	<link href="C:\Users\CurtN\Desktop\Repos\project/about_me_css.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/t31.0-8/10344328_10202361736432106_3561539600100051137_o.jpg">
+	<div class="container">
+		<div id="about">
+			<h1>About me</h1>
+			<p>Looking to Learn a new skill and change careers!<br> Here's the clif notes about me</p>
+				<ul>
+					<h3>The Skills</h3>
+					<li>Bachelor of Science in Communication Studies</li>
+					<li>Marketing/Ad Coordination/Corporate Partnerships</li>
+					<li>Events, Customer Service, Adobe, Office</li>
+				</ul>
+		</div>
+		<div id ="hobbies">
+			<h1>Hobbies</h1>
+			<p>I've got to play</p>
+				<ul>
+					<h3>The Fun</h3>
+					<li>Playing Music</li>
+					<li>Fishing, Camping, & the like</li>
+					<li>Entertaining, I sure do love laughing!</li>
+				</ul>
+		</div>
+		<div id ="plan">
+			<h1>Why Coding?</h1>
+			<p>This is the plan and so far so good</p>
+			<ul>
+				<h3>The Plan</h3>
+				<li>Exhaust Online Resources</li>
+				<li>Foundations I & II</li>
+				<li>Java Dev Accelerator(if above go well)</li>
+			</ul>
+		</div>
+		<div>
+			<form>
+			<label>
+				<h1> Talk to me</h1>
+				<strong>Favorite Band</strong>
+				<input name="band">
+			</label>
+			<label>
+				<strong>Favorite Movie</strong>
+				<input name="movie">
+			</label>
+			<label>
+				<strong>Explain yourself</strong>
+				<textarea name="input"></textarea>
+			</label>
+			<button>Submit</button>
+		</form>
+	</div>
+	</div>
+	<script type="text/javascript">
+
+		var form = document.querySelector("form");
+		form.addEventListener("submit",submit, false);
+
+		function submit(event) {
+			event.preventDefault();
+			var inputvalue = this.input.value;
+			var characters = inputvalue.match(/[^\s]/g);
+			if (characters) {
+				alert("Thanks for typing " + characters.length + " characters!");
+			} else {
+				alert("Thanks for nothing!")
+			}
+			console.log(event)
+		}
+		</script>
+</body>
+</html>
